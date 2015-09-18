@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="styles/main.sass.css">
+    <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+</head>
+
+<body>
+    <nav>
+    	<div class="header">
+    		<i id="plus" class="icon ion-plus-circled"></i>
+    	</div>
+        <form id="image-handler">
+            <section class="nav">
+                <div>
+                    <input type="text" id="imageURL" placeholder="Image URL">
+                </div>
+                <div>
+                    <textarea id="caption" rows="10" cols="50" placeholder="Description"></textarea>
+                </div>
+                <div class="buttonContainer">
+                <button id="cancel">CANCEL</button>
+                <button type="submit" id="addImage">ADD IMAGE</button>
+                </div>
+            </section>
+        </form>
+    </nav>
+    <section id='images'>
+    	
+    </section>
+    <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src ="scripts/main.js"></script>
+</body>
+
+</html>

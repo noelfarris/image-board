@@ -57,28 +57,30 @@ body {
 
 #images {
   margin: 0 auto;
-  width: 100%;
-  max-width: 54em; }
-
-.captionUpdate {
-  width: 75%;
-  margin: 0 auto;
-  padding: 21px;
-  background-color: white;
-  margin-bottom: 35px;
-  font-family: sans-serif;
-  color: gray;
-  border: solid #C0C0C0 1px;
-  border-top: none; }
+  width: 100%; }
 
 .coolpic {
-  width: 70%;
   margin: 0 auto;
   background-color: #E0E1E2;
-  padding-left: 5%;
-  padding-right: 5%;
   border: solid #C0C0C0 1px;
-  border-bottom: none; }
+  border-bottom: none;
+  padding-left: 5%;
+  padding-right: 5%; }
   .coolpic img {
     width: 100%;
     height: auto; }
+  .coolpic .captionUpdate {
+    margin: 0 auto;
+    padding: 21px;
+    background-color: white;
+    margin-bottom: 35px;
+    font-family: sans-serif;
+    color: gray;
+    border: solid #C0C0C0 1px;
+    border-top: none;
+    box-sizing: border-box;
+    margin-top: -3px; }
+
+@media (min-width: 453px) {
+  .coolpic {
+    width: 70%; } }

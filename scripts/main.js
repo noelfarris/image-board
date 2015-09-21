@@ -10,14 +10,15 @@ $(document).ready(function() {
     var $form = $('form');
     var url = 'http://tiyfe.herokuapp.com/collections/onlyfrisbee';
     var $plus = $('#plus');
+    var $coolpic = $('.coolpic');
 
     setInterval(function() {
         $.get(
             url,
             function(response) {
-            	$images.html('');
+            	$coolpic.html('');
                 response.forEach(function(imageData) {
-                        $images.append("<div class='coolpic'><img src=" + imageData.postImage + "></div><div class='captionUpdate'>" + imageData.postCaption + '</div>');
+                        $coolpic.append("<img src=" + imageData.postImage + "><div class='captionUpdate'>" + imageData.postCaption + '</div>');
                     }),
                     'json'
             });
@@ -37,7 +38,7 @@ $(document).ready(function() {
         console.log("i run!");
         var newImage = $imageURL.val();
         var text = $caption.val();
-        $images.append("<div class='coolpic'><img src=" + newImage + "></div><div class='captionUpdate'>" + text + '</div>');
+        $coolpic.append("<img src=" + newImage + "><div class='captionUpdate'>" + text + '</div>');
         $.post(
             url, {
                 postImage: newImage,
